@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Fortune Teller</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="img\favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="heading">
+    <h1>Ask me your question</h1>
+  </div>
+
+  <div class="container">
+
+    <div class="game">
+      <div class="eightBall">
+        <img class="img" src="img/8-ball.png" alt="8 ball picture">
+      </div>
+
+      <div class="gameDescription">
+        <p>Ask the Magic Ball yes or no question! Push the button!</p>
+        <button class="btn btnBall" type="button" name="button">Ask question</button>
+
+      </div>
+    </div>
+
+    <div class="game">
+      <div class="fortuneCookie">
+        <img class="img" src="img/fortune-cookie.png" alt="fortune cookie picture">
+      </div>
+
+      <div class="gameDescription">
+        <p>It's a fortune cookie! Push the button to try it!</p>
+        <button class="btn btnCookie" type="button" name="button">Ask question</button>
+
+      </div>
+    </div>
+
+
+    <div class="answerPopup" id="popup">
+      <img src="img\magic-ball.png" alt="magic ball" class="img popupImg">
+      <button type="button" name="button" class="closeButton">&times;</button>
+      <h3>And your answer is:</h3>
+      <p class="answer">Loren ipsum joihojo ojnojno nihn</p>
+    </div>
+
+    <div id="overlay"></div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
