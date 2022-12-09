@@ -87,11 +87,18 @@ p{
 }
 
 @media (max-width: 1000px) {
+  p{
+    font-size: 1.5rem;
+  }
   .container{
     flex-direction: column;
   }
   .game{
-    margin-top: 7%;
+    margin-top: 10%;
+  }
+  .answerPopup{
+    width: 300px;
+    height: 300px;
   }
 }
 
