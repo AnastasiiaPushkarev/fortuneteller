@@ -82,3 +82,7 @@ $(".closeButton").click(function(){
 $("#overlay").click(function(){
   close();
 });
+
+$("#overlay").on("tap", function(){
+  close();
+});
