@@ -78,3 +78,7 @@ $(".btnCookie").click(function(){
 $(".closeButton").click(function(){
   close();
 });
+
+$("#overlay").click(function(){
+  close();
+});
