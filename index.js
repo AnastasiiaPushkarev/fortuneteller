@@ -55,21 +55,26 @@ function getTheAnswer(gameAnswer){
   var random = Math.floor(Math.random() * gameAnswer.length);
   var answer = gameAnswer[random];
   $(".answer").text(answer);
-  // console.log(answer);
+}
+
+function close(){
+  $(".answerPopup").removeClass("active");
+  $("#overlay").removeClass("active");
+}
+
+function openPopup(game){
+  getTheAnswer(game);
+  $(".answerPopup").addClass("active");
+  $("#overlay").addClass("active");
 }
 
 $(".btnBall").click(function(){
-  getTheAnswer(eightBallAnswer);
-  $(".answerPopup").addClass("active");
-  $("#overlay").addClass("active");
+  openPopup(eightBallAnswer);
 });
 $(".btnCookie").click(function(){
-  getTheAnswer(fortuneCookieAnswer);
-  $(".answerPopup").addClass("active");
-  $("#overlay").addClass("active");
+  openPopup(fortuneCookieAnswer);
 });
 
 $(".closeButton").click(function(){
-  $(".answerPopup").removeClass("active");
-  $("#overlay").removeClass("active");
-})
+  close();
+});
