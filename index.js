@@ -83,6 +83,6 @@ $("#overlay").click(function(){
   close();
 });
 
-$("#overlay").on("tap", function(){
+$("#overlay").on("touchstart", function(){
   close();
 });
